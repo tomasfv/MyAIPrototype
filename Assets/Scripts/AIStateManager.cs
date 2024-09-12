@@ -11,9 +11,6 @@ public class AIStateManager : MonoBehaviour
     public BotRunState botRunState;
     public BotJumpState botJumpState;
     public BotReactionState botReactionState;
-    //TODO: Push State;
-    //TODO: Double Jump State;
-    //TODO: Troll State;
 
     [Header("Bot Parameters")]
     public bool run;

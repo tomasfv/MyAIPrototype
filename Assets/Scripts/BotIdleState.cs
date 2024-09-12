@@ -20,7 +20,7 @@ public class BotIdleState : AIState
         }
         else
         {
-            //agent.SetDestination(transform.position - (transform.forward * 2f));
+            
             agent.SetDestination(transform.position);
 
             //anim.SetBool("IsRunning", false);

@@ -18,14 +18,14 @@ public class WayPointsManager : MonoBehaviour
 
         singleton = this;
 
-        // Inicializar la matriz de secuencias
+        // Initialize list:
         wpSequences = new List<Transform>[9];
         for (int i = 0; i < 9; i++)
         {
             wpSequences[i] = new List<Transform>();
         }
 
-        // Rellenar las secuencias con waypoints aleatorios únicos
+        // Fill sequences with unique random WayPoints:
         for (int i = 0; i < wayPointZones.Count; i++)
         {
             int[] randomIndices = GenerateUniqueRandomIndices(9);
@@ -37,7 +37,7 @@ public class WayPointsManager : MonoBehaviour
         }
     }
 
-    // Genera una lista de índices aleatorios únicos
+    // Generate a list of unique random indexes:
     private int[] GenerateUniqueRandomIndices(int count)
     {
         List<int> indices = new List<int>();
