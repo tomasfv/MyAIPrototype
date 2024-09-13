@@ -196,6 +196,9 @@ public class BotMovement : MonoBehaviour
         botRb.isKinematic = false;
         agent.enabled = false;
 
+        botRb.velocity = Vector3.zero;
+        botRb.angularVelocity = Vector3.zero;
+
         if (xDirection)
         {
             botRb.AddForce(new Vector3(forwardForce, upForce, 0), ForceMode.Impulse);

@@ -7,8 +7,9 @@ public class WayPointsManager : MonoBehaviour
 {
     public static WayPointsManager singleton;
     public List<WayPointsZone> wayPointZones;
-    public List<Transform>[] wpSequences;
-    public List<Transform> customSequenceOne;
+    public List<Transform>[] wpSequences;       //Array of Lists(of Transforms) not visible in inspector. 
+    
+    public List<Transform> customSequenceOne;   //Optional customizable sequence. 
    
 
     private void Awake()
@@ -18,8 +19,8 @@ public class WayPointsManager : MonoBehaviour
 
         singleton = this;
 
-        // Initialize list:
-        wpSequences = new List<Transform>[9];
+        // Initialize list with nº of WayPoints per Zone:
+        wpSequences = new List<Transform>[9];       
         for (int i = 0; i < 9; i++)
         {
             wpSequences[i] = new List<Transform>();
@@ -37,7 +38,7 @@ public class WayPointsManager : MonoBehaviour
         }
     }
 
-    // Generate a list of unique random indexes:
+    // Generate a List converted to array of unique random indexes:
     private int[] GenerateUniqueRandomIndices(int count)
     {
         List<int> indices = new List<int>();

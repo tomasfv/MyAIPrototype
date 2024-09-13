@@ -22,7 +22,7 @@ public class AIBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        BotMovement botMovement = other.GetComponentInParent<BotMovement>();
+        BotMovement botMovement = other.GetComponent<BotMovement>();
 
 
         if (boxType == BoxType.Impulse && botMovement != null)

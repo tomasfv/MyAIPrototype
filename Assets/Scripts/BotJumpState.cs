@@ -17,10 +17,10 @@ public class BotJumpState : AIState
         else
         {
 
-            //Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward);
-            Quaternion targetRotation = Quaternion.LookRotation(botMovement.wayPointList[botMovement.nextWayPointIndex].position);
+            Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward);
+            //Quaternion targetRotation = Quaternion.LookRotation(botMovement.wayPointList[botMovement.nextWayPointIndex].position);
 
-            agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, targetRotation, 10 * Time.deltaTime);
+            //agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, targetRotation, 10 * Time.deltaTime);
             
             //anim.SetBool("IsRunning", false);
             //anim.SetBool("Reaction", false);
