@@ -7,6 +7,6 @@ public abstract class AIState : MonoBehaviour
 {
     public AIStateManager stateManager;
     public NavMeshAgent agent;
-    //public Animator anim;
+    public Animator anim;
     public abstract AIState SetCurrentState();
 }

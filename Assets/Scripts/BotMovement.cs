@@ -87,7 +87,8 @@ public class BotMovement : MonoBehaviour
     public void FollowPathway()
     {
         if (wayPointList.Count == 0) return;
-        if (nextWayPointIndex == wayPointList.Count) nextWayPointIndex = 0;
+        //if (nextWayPointIndex == wayPointList.Count) nextWayPointIndex = 0;   //for circuit mode. 
+        if (nextWayPointIndex == wayPointList.Count) return;
         if (isOnImpulseBox) return;
         if (isOnReactionBox) return;
 

@@ -23,11 +23,11 @@ public class BotIdleState : AIState
             
             agent.SetDestination(transform.position);
 
-            //anim.SetBool("IsRunning", false);
-            //anim.SetBool("IsJumping", false);
+            anim.SetBool("IsRunning", false);
+            anim.SetBool("IsJumping", false);
             //anim.SetBool("IsGrounded", true);
             //anim.SetBool("Reaction", false);
-            //anim.SetBool("HaveRabbit", false);
+           
             return this;
         }
     }

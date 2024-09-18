@@ -39,10 +39,10 @@ public class BotRunState : AIState
             
             agent.destination = botMovement.wayPointList[botMovement.nextWayPointIndex].position;
 
-            //anim.SetBool("IsJumping", false);
+            anim.SetBool("IsJumping", false);
             //anim.SetBool("Reaction", false);
             //anim.SetBool("reactionDelay", false);
-            //anim.SetBool("IsRunning", agent.velocity.magnitude > 0.01f);
+            anim.SetBool("IsRunning", agent.velocity.magnitude > 0.01f);
             //anim.SetBool("IsGrounded", true);
 
             return this;
